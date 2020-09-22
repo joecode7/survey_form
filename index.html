@@ -1,6 +1,27 @@
 <html lang="en">
-<h1>This is my survey form</h1>
-<script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<head>
 
+</head>
 
+<body>  
+    <h1 id="title">Pittsburgh Steelers Survey</h1>
+        <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <p id="description">Favorite Pittsburgh Steeler of All-Time
+    </p>
+    <form id="survey-form">
+        <label id="name-label">Name:</label>
+            <input type="text" name="name" id="name" placeholder= "Name" required></input><br>
+        <label id="email-label">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Email" required></input><br>
+        <label id="number-label">Number:</label>
+            <input type="number" name="number" id="number" min="000-0000" max="999-9999" placeholder="Phone Number" required></input><br>
+    <select name="Steeler" id="dropdown">
+        <option value="Troy Polamalu">Troy Polamalu</option>
+        <option value="Hines Ward">Hines Ward</option>
+        <option value="Jerome Bettis">Jerome Bettis</option>
+        <option value="Ben Roethlisberger">Ben Roethlisberger</option>
+        <option value="other">other</option>
+        </select>
+    </form>
+</body>
 </html>
