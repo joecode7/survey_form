@@ -1,6 +1,6 @@
 <html lang="en">
 <head>
-
+<link rel="stylesheet" type="text/css" href="css/survey_form_css.css">
 </head>
 
 <body>  
@@ -21,7 +21,24 @@
         <option value="Jerome Bettis">Jerome Bettis</option>
         <option value="Ben Roethlisberger">Ben Roethlisberger</option>
         <option value="other">other</option>
-        </select>
+    </select><br>
+    <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+    <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+    <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label><br>
+    <br>
+    <input type="checkbox" id="age_10-25 " name="age_10-25" value="Bike">
+        <label for="age_10-25"> Age 10-25</label><br>
+    <input type="checkbox" id="age_26-49 " name="age_26-49" value="Car">
+        <label for="age_26-49"> Age 26-49</label><br>
+    <input type="checkbox" id="age_50+ " name="age_50+" value="Boat">
+        <label for="age_50+"> Age 50+</label><br>
+    <br>
+    <textarea name="comments" id="comments" placeholder="Additional Comments"></textarea>
+    <br>
+    <input type="submit" id="submit">
     </form>
 </body>
 </html>
