@@ -1,44 +1,72 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <link rel="stylesheet" type="text/css" href="css/survey_form_css.css">
 </head>
 
-<body>  
+<body> 
+    <div class="titles"> 
     <h1 id="title">Pittsburgh Steelers Survey</h1>
         <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-    <p id="description">Favorite Pittsburgh Steeler of All-Time
-    </p>
+    
+    <p id="description">Favorite Pittsburgh Steeler of All-Time</p>
+    </div>
+    
     <form id="survey-form">
-        <label id="name-label">Name:</label>
-            <input type="text" name="name" id="name" placeholder= "Name" required></input><br>
-        <label id="email-label">Email:</label>
-            <input type="email" name="email" id="email" placeholder="Email" required></input><br>
-        <label id="number-label">Number:</label>
-            <input type="number" name="number" id="number" min="000-0000" max="999-9999" placeholder="Phone Number" required></input><br>
-    <select name="Steeler" id="dropdown">
+        <label for="name" id="name-label">Name:</label>
+            <input type="text" name="name" id="name" placeholder= "Name" required></input>
+                <br>
+        <label for="email" id="email-label">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Email" required></input>
+                <br>
+        <label for="number" id="number-label">Number:</label>
+            <input type="number" name="number" id="number" min="000-0000" max="999-9999" placeholder="Phone Number" required></input>
+    <br>
+    <br>
+    
+    <label id="gender">Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+        <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label><br>
+    <br>
+    
+    <label id ="age">Age:</label><br>
+        <input type="checkbox" id="age_10-25 " name="age_10-25" value="Bike">
+            <label for="age_10-25"> Age 10-25</label><br>
+        <input type="checkbox" id="age_26-49 " name="age_26-49" value="Car">
+             <label for="age_26-49"> Age 26-49</label><br>
+        <input type="checkbox" id="age_50+ " name="age_50+" value="Boat">
+            <label for="age_50+"> Age 50+</label><br>
+    <br>
+    
+    <label for="dropdown" id="Steelers Players">Steelers Players</label>
+        <select name="Steeler" id="dropdown">
         <option value="Troy Polamalu">Troy Polamalu</option>
         <option value="Hines Ward">Hines Ward</option>
         <option value="Jerome Bettis">Jerome Bettis</option>
         <option value="Ben Roethlisberger">Ben Roethlisberger</option>
         <option value="other">other</option>
-    </select><br>
-    <input type="radio" id="male" name="gender" value="male">
-        <label for="male">Male</label><br>
-    <input type="radio" id="female" name="gender" value="female">
-        <label for="female">Female</label><br>
-    <input type="radio" id="other" name="gender" value="other">
-        <label for="other">Other</label><br>
+    </select>
     <br>
-    <input type="checkbox" id="age_10-25 " name="age_10-25" value="Bike">
-        <label for="age_10-25"> Age 10-25</label><br>
-    <input type="checkbox" id="age_26-49 " name="age_26-49" value="Car">
-        <label for="age_26-49"> Age 26-49</label><br>
-    <input type="checkbox" id="age_50+ " name="age_50+" value="Boat">
-        <label for="age_50+"> Age 50+</label><br>
     <br>
-    <textarea name="comments" id="comments" placeholder="Additional Comments"></textarea>
-    <br>
-    <input type="submit" id="submit">
-    </form>
+
+<label for="favorite_coach" id="favorite_coach">Favorite Coach:</label>
+    <input type="radio" name="coach" id="favorite_coach" id="chuck_knoll" value="chuck_knoll">
+        <label for="favorite_coach">Chuck Knoll</label>
+    <input type="radio" name="coach" id="favorite_coach" id="bill_cowher" value="bill_cowher">
+        <label for="favorite_coach">Bill Cowher</label>
+    <input type="radio" name="coach" id="favorite_coach" id="mike_tomlin" value="mike_tomlin">
+        <label for="favorite_coach">Mike Tomlin</label>
+<br>
+<br>
+
+<textarea name="comments" id="comments" placeholder="Additional Comments"></textarea>
+<br>
+
+<input type="submit" id="submit" class="submit_button" value="Go Steelers!">
+</form>
 </body>
 </html>
